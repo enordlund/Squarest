@@ -51,7 +51,6 @@ struct SumView: View {
 			.navigationBarTitle(Text("Sum"), displayMode: .large)
 			.padding()
 		}
-        .background(Color(.systemGroupedBackground))
 	}
 }
 

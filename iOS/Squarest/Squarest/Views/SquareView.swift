@@ -15,7 +15,7 @@ struct SquareView: View {
 	var body: some View {
 		NavigationView {
 			VStack {
-				
+				Spacer()
 				Group {
 					if squarer.isLoading {
 						// result is loading
@@ -41,11 +41,12 @@ struct SquareView: View {
 					squarer.requestSquare(of: squareInput)
 				})
 				.padding()
+                Spacer()
 			}
 			.navigationBarTitle(Text("Square"), displayMode: .large)
 			.padding()
 		}
-        .background(Color(.systemGroupedBackground))
+        
 	}
 }
 
