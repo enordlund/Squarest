@@ -16,6 +16,7 @@ struct SumView: View {
 	var body: some View {
 		NavigationView {
 			VStack {
+                Spacer()
 				Group {
 					if summer.isLoading {
 						// result is loading
@@ -47,9 +48,12 @@ struct SumView: View {
 					summer.requestSum(of: sumInput1, and: sumInput2)
 				})
 				.padding()
+                Spacer()
 			}
+            .padding()
+            .background(Color(.systemGroupedBackground)
+                            .edgesIgnoringSafeArea(.all))
 			.navigationBarTitle(Text("Sum"), displayMode: .large)
-			.padding()
 		}
 	}
 }

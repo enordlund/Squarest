@@ -43,8 +43,10 @@ struct SquareView: View {
 				.padding()
                 Spacer()
 			}
+            .padding()
+            .background(Color(.systemGroupedBackground)
+                            .edgesIgnoringSafeArea(.all))
 			.navigationBarTitle(Text("Square"), displayMode: .large)
-			.padding()
 		}
         
 	}
